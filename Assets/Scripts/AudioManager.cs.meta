@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 399d6513fd287738346eb11bb876392e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - efxSource: {instanceID: 0}
+  - musicSource: {instanceID: 0}
+  - menuMusic: {fileID: 8300000, guid: 6263bdc46f2045caa9c719719ae900ac, type: 3}
+  - gameMusic: {fileID: 8300000, guid: 6263bdc46f2045caa9c719719ae900ac, type: 3}
+  - buttonClick: {fileID: 8300000, guid: f4be925b93514c2e9a0e070caa1f83c9, type: 3}
+  - gameOver: {fileID: 8300000, guid: 7347f8fab41a4a889ee481fde144491f, type: 3}
+  - pickColor: {fileID: 8300000, guid: 95c86a3b2771476ab195c99a1ad159c5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
