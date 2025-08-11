@@ -42,7 +42,7 @@ public class ScoreManager : MonoBehaviour
 
 	void Update()
 	{
-        currency.text = DBManager.GetCurrency("map").ToString();
+        currency.text = DBManager.GetCurrency("energy").ToString();
     }	
 
 	private void Start()
@@ -60,7 +60,7 @@ public class ScoreManager : MonoBehaviour
 
 	private void UpdateHighScore()
 	{
-        currency.text = DBManager.GetCurrency("map").ToString();
+        currency.text = DBManager.GetCurrency("energy").ToString();
         if (currentScore > highScore)
 		{
 			highScore = currentScore;

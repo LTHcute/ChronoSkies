@@ -59,7 +59,7 @@ public class UIManager : MonoBehaviour
 		{
 			if (!IsButton())
 			{
-                int energyCount = DBManager.GetCurrency("map");
+                int energyCount = DBManager.GetCurrency("energy");
                 if (energyCount <= 0)
                 {
                     GameManager.Instance.ShowNotification();

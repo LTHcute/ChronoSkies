@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
 	private void Update()
 	{
      
-        currency.text = DBManager.GetCurrency("map").ToString();
+        currency.text = DBManager.GetCurrency("energy").ToString();
        
      
           
@@ -349,7 +349,8 @@ public class GameManager : MonoBehaviour
 	public void RestartGame()
 	{
         Debug.Log("2");
-        int energyCount = DBManager.GetCurrency("map");
+        int energyCount = DBManager.GetCurrency("energy");
+        Debug.Log(energyCount);
         if(energyCount <= 0)
         {
             ShowNotification();
@@ -366,7 +367,7 @@ public class GameManager : MonoBehaviour
 		scoreManager.ResetCurrentScore();
 		uIManager.ShowGameplay();
 		camObject.GetComponent<CameraFollowTarget>().EnableDisableFollow(status: false);
-        DBManager.SetCurrency("map",energyCount - 1);
+        DBManager.SetCurrency("energy", energyCount - 1);
     }
 
     public void ShowNotification()
